@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+
+@font-face {
+    font-family: 'cairo';
+    src: url('assets/fonts/cairo.ttf')
+  }
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  margin: 0 auto;
+    background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 1440px;
+    gap:10%;
+
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+:root {
+    /* Primary Colors */
+    --color-light-red: rgba(255, 80, 80);
+    --color-light-bg-red: rgba(255, 80, 80, .2);
+
+    --color-orangey-yellow: rgba(255, 179, 80, 1);
+    --color-orangey-bg-yellow: rgba(255, 179, 80, .2);
+    
+    --color-green-teal: rgba(38, 201, 139, 1);
+    --color-green-bg-teal: rgba(38, 201, 139, .2);
+
+    --color-cobalt-blue: rgba(6, 63, 147, 1);
+    --color-cobalt-bg-blue: rgba(6, 63, 147, .2);
+
+    /* Gradients */
+    --color-light-slate-blue: rgba(166, 185, 255, 1);
+    --color-light-royal-blue: rgba(131, 168, 255, 1);
+
+    /* Circle Colors */
+    --color-violet-blue: rgba(112, 89, 230, 1);
+    --color-persian-blue: rgba(131, 168, 255, .5);
+
+    /* Neutral Colors */
+    --color-white: rgba(255, 255, 255, 1);
+    --color-pale-blue: rgba(225, 239, 255, 1);
+    --color-light-lavender: rgba(229, 215, 255, 1);
+    --color-dark-gray-blue: rgba(57, 74, 99, 1);
+    --bg-gradient-1: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    --bg-gradient-2: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 750px;
+    height: 500px;
+}
+
+.result-section{
+    background-image: var(--bg-gradient-1);
+    display: flex;
+    border-radius: 20px;
+    align-items: center;
+    justify-content:space-between;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    padding: 40px;
+    color: white;
+    
+}
+/* .main-value{
+    border-radius: 50%;
+    background-color:var(--color-cobalt-bg-blue);
+} */
+.secondary-title{
+    width: 100%;
+}
+.circle{
+  display: flex;
+    background-image: var(--bg-gradient-2);
+    justify-content: center;
+    align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.circle .main-value{
+    font-size: 64px;
+}
+.description{
+    padding-left: 16px;
+    padding-right: 20px;
+}
+
+.summary-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--color-white);
+    width: 50%;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 25px 25px 30px var(--color-pale-blue);
+    padding: 40px;
+   
+}
+
+.summary-section .title {
+    color: var(--color-dark-gray-blue);
+    font-size: 20px;
+    /* font-weight: 600; */
+    width: 100%;
+    
+}
+.list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    margin: 8px 0;
+}
+
+
+.list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 16px;
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    margin: 8px 0;
+    font-weight: 500;
+}
+
+.list li .box_img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list li .box_img img{
+margin-right: 16px;
+}
+.list li:nth-of-type(1) {
+    background-color: var(--color-light-bg-red);
+    color: var(--color-light-red)
+}
+
+
+.list li:nth-of-type(2) {
+    background-color: var(--color-orangey-bg-yellow);
+    color: var(--color-orangey-yellow)
+}
+
+
+.list li:nth-of-type(3) {
+    background-color: var(--color-green-bg-teal);
+    color: var(--color-green-teal)
+}
+
+
+.list li:nth-of-type(4) {
+    background-color: var(--color-cobalt-bg-blue);
+    color: var(--color-cobalt-blue)
+}
+
+.box_res{
+    color: black;
+    font-weight: bold;
+}
+.box_res span{
+color: var(--color-dark-gray-blue);
+}
+
+
+.summary-section .link {
+    transition: all 0.3s ease-in-out;
+    padding: 10px 32px;
+    background-color: var(--color-dark-gray-blue);
+    color: white;
+    display: inline-block;
+    font-size: 15px ;
+    border-radius: 40px;
+    width: 100%;
+    text-align: center;
+    margin-top: 22px;
+   
+}
+
+.summary-section .link:hover{
+    background-color: red;
+    cursor: pointer;
+    padding: 20px 40px;
+}
